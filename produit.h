@@ -3,10 +3,10 @@
 #include <string> 
 class Produit {
 private:
-    std::string nom;
-    std::string description;
-    float prix;
-    int quantite;
+    std::string nom_;
+    std::string description_;
+    float prix_;
+    int quantite_;
 public:
     Produit( std::string nom, std::string description, float prix, int quantite);
     std::string getNom() const;
