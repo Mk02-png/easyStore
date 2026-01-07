@@ -1,6 +1,6 @@
 #ifndef Produit_h
 #define Produit_h  
-#include <string.h> 
+#include <string> 
 class Produit {
 private:
     std::string nom;
