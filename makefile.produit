@@ -1,0 +1,5 @@
+all:
+	g++ -Wall -Wextra -std=c++20 maintestproduit.cpp produit.cpp -o testproduit
+
+clean:
+	rm -f testproduit
