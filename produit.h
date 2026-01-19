@@ -15,7 +15,7 @@ public:
     float getPrix() const;
     int getQuantite() const;
     void setQuantite(int quantite);
-    void afficherProduit();
+    void afficherProduit()const;
 };
 
 #endif

@@ -26,6 +26,6 @@ void Produit::setQuantite(int quantite) {
    quantite_= quantite; 
 }
 
-void Produit::afficherProduit(){
+void Produit::afficherProduit()const{
     std::cout<<idP_<<" "<<nom_<<" "<<quantite_<<" ;"<<std::endl;
 }

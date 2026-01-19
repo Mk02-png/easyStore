@@ -12,6 +12,7 @@ int main(){
 	cout<<PC.getQuantite()<<endl;
 
 	PC.afficherProduit();
+	
 
 
 	return 0;
