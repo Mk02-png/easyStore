@@ -1,7 +1,10 @@
 #include "produit.h"
+#include <iostream>
 
-Produit::Produit( std::string nom, std::string description, float prix, int quantite)
-    : nom_(nom), description_(description), prix_(prix), quantite_(quantite) {}
+Produit::Produit( std::string nom, std::string description, float prix, int quantite,int &idP)
+    : nom_(nom), description_(description), prix_(prix), quantite_(quantite),idP_(idP+1) {
+        idP++;
+    }
 
 std::string Produit::getNom() const {
     return nom_; 
@@ -21,4 +24,8 @@ int Produit::getQuantite() const {
 
 void Produit::setQuantite(int quantite) {
    quantite_= quantite; 
+}
+
+void Produit::afficherProduit(){
+    std::cout<<idP_<<" "<<nom_<<" "<<quantite_<<" ;"<<std::endl;
 }
